@@ -36,6 +36,11 @@ export default {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
 				},
+        // New success color definition
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
@@ -68,6 +73,11 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+      // Font family definitions in index.css are picked up by existing .font-body and .font-heading utilities.
+      // If you need to use Tailwind's `font-sans` class directly with 'Inter', you could add:
+      // fontFamily: {
+      //   sans: ['var(--font-primary-sans)', ...require('tailwindcss/defaultTheme').fontFamily.sans],
+      // },
 			keyframes: {
 				'accordion-down': {
 					from: {
